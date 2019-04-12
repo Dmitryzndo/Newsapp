@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250F34662248D70500D89665 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250F34652248D70500D89665 /* TableViewController.swift */; };
 		251276B62243D65E005467D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251276B52243D65E005467D1 /* AppDelegate.swift */; };
-		251276B82243D65E005467D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251276B72243D65E005467D1 /* ViewController.swift */; };
 		251276BB2243D65E005467D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251276B92243D65E005467D1 /* Main.storyboard */; };
 		251276BD2243D65F005467D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 251276BC2243D65F005467D1 /* Assets.xcassets */; };
 		251276C02243D65F005467D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251276BE2243D65F005467D1 /* LaunchScreen.storyboard */; };
+		251276C922450E25005467D1 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251276C822450E25005467D1 /* Article.swift */; };
+		251276CB22451336005467D1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251276CA22451336005467D1 /* Model.swift */; };
+		252AA01C22561BD300AB1E1C /* OneNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252AA01B22561BD300AB1E1C /* OneNewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250F34652248D70500D89665 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		251276B22243D65E005467D1 /* Newsapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		251276B52243D65E005467D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		251276B72243D65E005467D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		251276BA2243D65E005467D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		251276BC2243D65F005467D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		251276BF2243D65F005467D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		251276C12243D65F005467D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		251276C822450E25005467D1 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		251276CA22451336005467D1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		252AA01B22561BD300AB1E1C /* OneNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneNewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		251276B42243D65E005467D1 /* Newsapp */ = {
 			isa = PBXGroup;
 			children = (
+				251276C722450B0C005467D1 /* Model */,
 				251276B52243D65E005467D1 /* AppDelegate.swift */,
-				251276B72243D65E005467D1 /* ViewController.swift */,
+				250F34652248D70500D89665 /* TableViewController.swift */,
+				252AA01B22561BD300AB1E1C /* OneNewsViewController.swift */,
 				251276B92243D65E005467D1 /* Main.storyboard */,
 				251276BC2243D65F005467D1 /* Assets.xcassets */,
 				251276BE2243D65F005467D1 /* LaunchScreen.storyboard */,
 				251276C12243D65F005467D1 /* Info.plist */,
 			);
 			path = Newsapp;
+			sourceTree = "<group>";
+		};
+		251276C722450B0C005467D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				251276C822450E25005467D1 /* Article.swift */,
+				251276CA22451336005467D1 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +113,7 @@
 				TargetAttributes = {
 					251276B12243D65E005467D1 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -135,8 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				251276B82243D65E005467D1 /* ViewController.swift in Sources */,
+				252AA01C22561BD300AB1E1C /* OneNewsViewController.swift in Sources */,
 				251276B62243D65E005467D1 /* AppDelegate.swift in Sources */,
+				251276C922450E25005467D1 /* Article.swift in Sources */,
+				251276CB22451336005467D1 /* Model.swift in Sources */,
+				250F34662248D70500D89665 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C28YH88VY9;
 				INFOPLIST_FILE = Newsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,7 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZNDO.Newsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C28YH88VY9;
 				INFOPLIST_FILE = Newsapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,7 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ZNDO.Newsapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
